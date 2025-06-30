@@ -1,0 +1,28 @@
+# macOS system files
+.DS_Store
+
+# Node dependencies (if using npm or yarn)
+node_modules/
+
+# Sass/SCSS cache files
+.sass-cache/
+*.css.map
+px-css/
+*.css
+
+# VS Code settings
+.vscode/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+
+# OS generated files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
