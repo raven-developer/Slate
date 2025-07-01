@@ -1,0 +1,19 @@
+:root {
+  --heading-color: #002e25;
+  --highlight-color: #cdfa89;
+  --paragraph-color: #3c4049;
+  --black-color: #090c10;
+  --light-color: #f3f7f6;
+}
+
+/*
+* GAP
+*/
+
+$gap-values: 0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80;
+
+@each $gap in $gap-values {
+  .gap-#{$gap} {
+    gap: #{$gap}px;
+  }
+}

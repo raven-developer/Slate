@@ -1,0 +1,29 @@
+/*
+* GLOBAL STYLES
+*/
+@use 'style' as *;
+
+.px-section {
+  padding-block: 120px;
+  width: 100%;
+}
+
+.px-container {
+  max-width: 1192px;
+  width: 100%;
+  margin-inline: auto;
+  padding-inline: 40px;
+  @include screen-768 {
+    padding-inline: 20px;
+  }
+}
+
+.px-content-block {
+  display: flex;
+  flex-direction: row;
+
+  .px-left-wrapper,
+  .px-right-wrapper {
+    flex: 1;
+  }
+}

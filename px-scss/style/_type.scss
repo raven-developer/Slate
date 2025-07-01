@@ -1,0 +1,70 @@
+/* Typography Styles */
+// _typography.scss
+@use 'mixins' as *;
+
+html {
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @include heading-font(1rem, var(--heading-color));
+}
+
+h1,
+h2,
+h3 {
+  margin-block: 1rem;
+}
+
+h1 {
+  font-size: 4.5rem; // 72px
+}
+
+h2 {
+  font-size: 3.75rem; // 60px
+}
+
+h3 {
+  font-size: 3rem; // 48px
+}
+
+h4 {
+  font-size: 2.25rem; // 36px
+}
+
+h5 {
+  font-size: 1.5rem; // 24px
+}
+
+h6 {
+  font-size: 1.125rem; // 18px
+}
+
+li,
+p {
+  @include paragraph-font(1rem, var(--paragraph-color));
+}
+
+.px-page-heading {
+  font-size: 4.5rem;
+}
+
+.px-section-heading {
+  font-size: 3rem;
+}
+
+.px-text {
+  font-size: 1rem;
+}
+
+a {
+  font-family: inherit;
+  font-size: inherit;
+  color: var(--heading-color);
+  text-decoration: none;
+}
