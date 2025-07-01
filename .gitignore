@@ -7,8 +7,6 @@ node_modules/
 # Sass/SCSS cache files
 .sass-cache/
 *.css.map
-px-css/
-*.css
 
 # VS Code settings
 .vscode/
