@@ -14,4 +14,22 @@
       color: white;
     }
   }
+
+  &--ghost {
+    margin-top: 24px;
+    padding: unset;
+    border-radius: unset;
+    @include btn-variant(var(--accent-color), transparent, transparent, transparent);
+    border-bottom: 1px solid var(--accent-color);
+    padding-bottom: 2px;
+    transition: 0.2s;
+
+    &:hover {
+      transform: unset;
+    }
+
+    &:active {
+      transform: unset;
+    }
+  }
 }

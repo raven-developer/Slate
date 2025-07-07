@@ -1,7 +1,7 @@
 @use 'style/index.scss' as *;
 
 header {
-  background-color: var(--light-color);
+  background-color: transparent;
   .px-content-block {
     justify-content: space-between;
 
@@ -24,8 +24,7 @@ header {
   }
 
   .px-nav-logo-block {
-    max-height: 36px;
-    height: 100%;
+    height: 40px;
     width: max-content;
   }
 

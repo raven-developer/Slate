@@ -1,0 +1,35 @@
+@use '../style/index.scss' as *;
+
+.px-form {
+  &--sg-field {
+    display: inline-flex;
+    align-items: center;
+    .px-button {
+      position: absolute;
+      right: 8px;
+      margin-block: 2px;
+    }
+    .px-input-field {
+      padding-block: 1.5rem;
+      padding-right: 160px;
+    }
+  }
+}
+
+.px-input-field {
+  border: 1px solid var(--light-gray);
+  border-radius: 50px;
+  padding: 18px 2rem;
+  width: 100%;
+  transition: 0.2s;
+
+  &:hover {
+    border-color: var(--heading-color);
+  }
+
+  &:active,
+  &:focus {
+    border-color: var(--accent-color);
+    background-color: var(--white);
+  }
+}

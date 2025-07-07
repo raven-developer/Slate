@@ -12,5 +12,12 @@
 }
 
 .is_center {
-  align-items: center;
+  place-items: center;
+  justify-content: center;
+}
+
+.is_fixed {
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }

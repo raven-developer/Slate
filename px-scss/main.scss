@@ -2,8 +2,10 @@
 
 // STYLE
 @use 'style/index.scss' as *;
-@use 'hubs';
 
 // GLOBAL STYLES
 @use 'global';
 @use 'nav';
+@use 'hubs';
+
+@use 'adj';

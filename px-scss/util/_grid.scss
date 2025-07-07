@@ -1,0 +1,17 @@
+@use '../style/index.scss' as *;
+
+.px-content-block--grid {
+  display: grid;
+}
+
+.px-content-block {
+  &--3col {
+    grid-template-columns: repeat(3, 1fr);
+    @include screen-768 {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include screen-552 {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}

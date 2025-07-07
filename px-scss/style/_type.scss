@@ -46,6 +46,7 @@ h6 {
   font-size: 1.125rem; // 18px
 }
 
+.px-button,
 li,
 p {
   @include paragraph-font(1rem, var(--paragraph-color));
@@ -82,7 +83,7 @@ main a {
   padding-bottom: 0;
   transition: all 0.3s var(--cubic-bezier);
 
-  &:hover {
+  &:not(a.px-button):hover {
     border-color: var(--heading-color);
     padding-bottom: 3px;
   }

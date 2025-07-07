@@ -1,5 +1,13 @@
-.px-section[data-variant='off-white'] {
+body {
   background-image: url('/px-upload/image/bU4StW2wMzOvXUD5mWxTW9khas.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+section[data-variant='white'] {
+  background-color: var(--white);
 }
 
 .px-section--hero {

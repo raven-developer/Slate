@@ -42,12 +42,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  width: fit-content;
   border-radius: var(--button-radius);
   padding: 16px 28px;
   cursor: pointer;
   transform: translateY(0);
   transition: all 0.2s ease 0s;
   white-space: nowrap;
+  font-weight: 500;
 
   &:hover {
     transform: translateY(-7px);

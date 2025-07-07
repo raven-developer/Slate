@@ -1,0 +1,26 @@
+@use 'style/index.scss' as *;
+
+.px-section-id-0413 {
+  .px-form {
+    width: 480px;
+  }
+
+  .px-bottom-wrapper {
+    display: flex;
+  }
+}
+
+.px-section-id-0414 {
+  border-bottom: 1px solid #00524217;
+}
+
+.px-section-id-0415 {
+  .px-content-block {
+    align-items: flex-end;
+  }
+  .px-right-wrapper {
+    @media (min-width: 768px) {
+      padding-bottom: 23px;
+    }
+  }
+}
