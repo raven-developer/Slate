@@ -3,7 +3,7 @@
 // Load Nav
 async function loadNav() {
   try {
-    const isNav = await fetch('/px-comp/navigation.html');
+    const isNav = await fetch('px-comp/navigation.html');
 
     if (!isNav.ok) {
       throw new Error(`Failed to load content: ${isNav.status} ${isNav.statusText}`);
@@ -28,7 +28,7 @@ async function loadNav() {
 // Load Footer
 async function loadFooter() {
   try {
-    const isFooter = await fetch('/px-comp/footer.html');
+    const isFooter = await fetch('px-comp/footer.html');
 
     if (!isFooter.ok) {
       throw new Error(`Failed to load content: ${isFooter.status} ${isFooter.statusText}`);
@@ -53,7 +53,7 @@ async function loadFooter() {
 // Load Home
 async function loadHome() {
   try {
-    const isHome = await fetch('/home/index.html');
+    const isHome = await fetch('home/index.html');
 
     if (!isHome.ok) {
       throw new Error(`Failed to load content: ${isHome.status} ${isHome.statusText}`);
