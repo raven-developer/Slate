@@ -1,7 +1,7 @@
 /*
 * GLOBAL STYLES
 */
-@use 'style' as *;
+@use 'style/index.scss' as *;
 
 .px-section {
   padding-block: 120px;
@@ -20,10 +20,30 @@
 
 .px-content-block {
   display: flex;
-  flex-direction: row;
 
+  &--col {
+    flex-direction: column;
+  }
+
+  &--row {
+    flex-direction: row;
+  }
+
+  .px-top-wrapper,
+  .px-bottom-wrapper,
   .px-left-wrapper,
   .px-right-wrapper {
     flex: 1;
+  }
+}
+
+.px-heading-block {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-bottom: 1.125rem;
+
+  .px-eyebrow {
+    margin-bottom: 1.125rem;
   }
 }

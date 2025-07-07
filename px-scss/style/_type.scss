@@ -19,6 +19,7 @@ h1,
 h2,
 h3 {
   margin-block: 1rem;
+  letter-spacing: -1.5px;
 }
 
 h1 {
@@ -48,6 +49,7 @@ h6 {
 li,
 p {
   @include paragraph-font(1rem, var(--paragraph-color));
+  letter-spacing: -0.27px;
 }
 
 .px-page-heading {
@@ -62,9 +64,26 @@ p {
   font-size: 1rem;
 }
 
-a {
+.px-eyebrow {
+  padding: 0.6rem 1.5rem;
+  font-size: 1rem;
+  color: var(--heading-color);
+  border: 1px solid var(--heading-color);
+  border-radius: 50px;
+  width: fit-content;
+}
+
+main a {
   font-family: inherit;
   font-size: inherit;
   color: var(--heading-color);
   text-decoration: none;
+  border-bottom: 1px solid transparent;
+  padding-bottom: 0;
+  transition: all 0.3s var(--cubic-bezier);
+
+  &:hover {
+    border-color: var(--heading-color);
+    padding-bottom: 3px;
+  }
 }

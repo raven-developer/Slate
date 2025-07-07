@@ -1,0 +1,15 @@
+.px-section[data-variant='off-white'] {
+  background-image: url('/px-upload/image/bU4StW2wMzOvXUD5mWxTW9khas.jpg');
+}
+
+.px-section--hero {
+  /* max-height: 100vh; */
+  max-height: 100%;
+  .px-container--hero {
+    max-width: 910px;
+  }
+  width: 100%;
+  .px-text:not(.px-eyebrow) {
+    font-size: 1.125rem;
+  }
+}

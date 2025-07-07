@@ -36,8 +36,41 @@
 }
 
 /*
-* RESPONSIVE MIXINS
-*/
+ * BUTTON MIXINS
+ */
+@mixin btn-base {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--button-radius);
+  padding: 16px 28px;
+  cursor: pointer;
+  transform: translateY(0);
+  transition: all 0.2s ease 0s;
+  white-space: nowrap;
+
+  &:hover {
+    transform: translateY(-7px);
+  }
+
+  &:active {
+    transform: translateY(-4px);
+  }
+}
+
+@mixin btn-variant($text-color, $bg-color, $border-color: transparent, $hover-color) {
+  color: $text-color;
+  background-color: $bg-color;
+  border: 1px solid $border-color;
+
+  &:hover {
+    background-color: $hover-color;
+  }
+}
+
+/*
+ * RESPONSIVE MIXINS
+ */
 @mixin screen-1440 {
   @media (max-width: 1440px) {
     @content;

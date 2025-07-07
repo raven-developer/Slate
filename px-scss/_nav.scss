@@ -1,0 +1,35 @@
+@use 'style/index.scss' as *;
+
+header {
+  background-color: var(--light-color);
+  .px-content-block {
+    justify-content: space-between;
+
+    .px-right-wrapper {
+      flex: 0;
+    }
+  }
+
+  .px-container {
+    padding-block: 25px;
+  }
+
+  .px-left-wrapper,
+  .px-right-wrapper,
+  .px-nav-link-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .px-nav-logo-block {
+    max-height: 36px;
+    height: 100%;
+    width: max-content;
+  }
+
+  .px-nav-link {
+    padding: 0.5rem 1rem;
+  }
+}

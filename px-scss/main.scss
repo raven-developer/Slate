@@ -1,12 +1,9 @@
 @use 'reset';
 
 // STYLE
-@use 'style' as *;
+@use 'style/index.scss' as *;
+@use 'hubs';
 
 // GLOBAL STYLES
 @use 'global';
-
-// FORWARDERS
-@use 'util';
-@use 'comp';
-@use 'layout';
+@use 'nav';

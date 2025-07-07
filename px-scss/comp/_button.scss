@@ -1,0 +1,17 @@
+@use '../style/index.scss' as *;
+
+.px-button {
+  @include btn-base;
+  margin-block: 7px;
+
+  &--solid {
+    @include btn-variant(var(--light-color), var(--accent-color), transparent, var(--black-color));
+  }
+  &--outline {
+    @include btn-variant(var(--accent-color), transparent, var(--accent-color), var(--accent-color));
+
+    &:hover {
+      color: white;
+    }
+  }
+}
