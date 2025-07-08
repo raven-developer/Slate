@@ -11,7 +11,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+.px-heading {
   @include heading-font(1rem, var(--heading-color));
 }
 
@@ -53,25 +54,41 @@ p {
   letter-spacing: -0.27px;
 }
 
-.px-page-heading {
-  font-size: 4.5rem;
+.px-heading {
+  &--page {
+    @extend h1;
+  }
+
+  &--large {
+    @extend h2;
+    margin-block: 0 1rem;
+  }
+  &--section {
+    @extend h3;
+    margin-block: 0 1rem;
+  }
 }
 
-.px-section-heading {
-  font-size: 3rem;
+.px-sub {
+  font-size: 1.125rem;
 }
 
 .px-text {
   font-size: 1rem;
+  margin-bottom: 1rem;
 }
 
 .px-eyebrow {
-  padding: 0.6rem 1.5rem;
-  font-size: 1rem;
+  padding: 8px 12px;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
   color: var(--heading-color);
-  border: 1px solid var(--heading-color);
+  border: 1px solid rgba(var(--heading-color-rgb), 0.4);
   border-radius: 50px;
   width: fit-content;
+  background-color: white;
 }
 
 main a {

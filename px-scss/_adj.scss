@@ -15,12 +15,24 @@
 }
 
 .px-section-id-0415 {
-  .px-content-block {
-    align-items: flex-end;
-  }
   .px-right-wrapper {
+    flex: 1;
+
     @media (min-width: 768px) {
-      padding-bottom: 23px;
+      .px-heading {
+        line-height: 0.95;
+      }
+    }
+  }
+
+  .px-left-wrapper {
+    @media (min-width: 768px) {
+      flex: 0.5;
+      width: fit-content;
+    }
+
+    p {
+      white-space: nowrap;
     }
   }
 }

@@ -53,7 +53,7 @@ async function loadFooter() {
 // Load Home
 async function loadHome() {
   try {
-    const isHome = await fetch('home/index.html');
+    const isHome = await fetch(' home/index.html');
 
     if (!isHome.ok) {
       throw new Error(`Failed to load content: ${isHome.status} ${isHome.statusText}`);
