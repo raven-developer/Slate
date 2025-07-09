@@ -16,8 +16,16 @@
   justify-content: center;
 }
 
+.vertical_center {
+  align-items: center;
+}
+
 .is_fixed {
   position: sticky;
   top: 0;
   z-index: 10;
+}
+
+.is_flex-1 {
+  flex: 1;
 }

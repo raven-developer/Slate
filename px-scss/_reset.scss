@@ -165,13 +165,9 @@ body {
 }
 
 img {
-  height: 100%;
-  width: 100%;
-  object-fit: contain;
-}
-
-main img {
-  object-fit: cover;
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 /*
