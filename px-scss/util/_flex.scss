@@ -1,0 +1,17 @@
+.px-flex {
+  display: flex;
+}
+
+.px-row {
+  @extend .px-flex;
+  flex-direction: row;
+}
+
+.px-column {
+  @extend .px-flex;
+  flex-direction: column;
+}
+
+.px-flex-70 {
+  flex: 0.7;
+}

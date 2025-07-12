@@ -82,13 +82,14 @@ p {
   padding: 8px 12px;
   font-size: 0.75rem;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 1px;
-  color: var(--heading-color);
+  color: var(--black-color);
   border: 1px solid rgba(var(--heading-color-rgb), 0.4);
   border-radius: 50px;
   width: fit-content;
   background-color: white;
+  margin-block: 0 1.25rem;
 }
 
 main a {
@@ -100,7 +101,7 @@ main a {
   padding-bottom: 0;
   transition: all 0.3s var(--cubic-bezier);
 
-  &:not(a.px-button):hover {
+  &:not(a.px-button, a.is_card):hover {
     border-color: var(--heading-color);
     padding-bottom: 3px;
   }

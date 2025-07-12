@@ -11,16 +11,24 @@ document.addEventListener('DOMContentLoaded', async function () {
     console.error('Error loading components:', error);
   }
 
-  const mainImage = document.getElementById('px-img-0129');
-  const parentDiv = document.getElementById('0416-rwrapper');
-  if (mainImage.complete) {
-    applyImageHeight();
-  } else {
-    mainImage.onload = applyImageHeight;
-  }
+  const mainImages = document.querySelectorAll('.px-image-back');
+  const parentDivs = document.querySelectorAll('.px-image-block--stacked');
 
-  function applyImageHeight() {
-    const height = mainImage.getBoundingClientRect().height;
-    parentDiv.style.height = `${height}px`;
+  mainImages.forEach((img, index) => {
+    const parent = parentDivs[index];
+    if (!img || !parent) return;
+
+    if (img.complete) {
+      applyImageSize(img, parent);
+    } else {
+      img.onload = () => applyImageSize(img, parent);
+      img.onload = () => applyImageSize(img, parent);
+    }
+  });
+
+  function applyImageSize(image, parent) {
+    const { width, height } = image.getBoundingClientRect();
+    parent.style.height = `${height}px`;
+    parent.style.width = `${width}px`;
   }
 });

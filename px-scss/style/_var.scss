@@ -5,8 +5,8 @@
   --highlight-color: #cdfa89;
   --paragraph-color: #3c4049;
   --black-color: #090c10;
-  --light-color: #f3f7f6;
-  --white: #f2f0ef;
+  --light-color: #f6f7f8;
+  --white: #fff;
   --light-gray: #ebecef;
   --cubic-bezier: cubic-bezier(0.35, 0, 0.175, 1);
   --button-radius: 50px;
@@ -16,7 +16,7 @@
 * GAP
 */
 
-$gap-values: 0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 120;
+$gap-values: 0, 5, 10, 15, 16, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 120;
 
 @each $gap in $gap-values {
   .gap-#{$gap} {
