@@ -35,6 +35,9 @@
 
   &--row {
     flex-direction: row;
+    @include screen-1024 {
+      flex-direction: column;
+    }
   }
   /*
   .px-top-wrapper,
@@ -126,4 +129,9 @@
       margin-right: 8px;
     }
   }
+}
+
+.px-logo {
+  max-height: 32px;
+  width: auto;
 }

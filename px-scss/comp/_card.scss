@@ -1,7 +1,12 @@
+@use '../style/index.scss' as *;
+
 .px-card-wrapper {
   padding-block: 24px 0;
 }
 .px-card {
+  img {
+    object-fit: contain;
+  }
   &--horizontal {
     display: inline-flex;
     align-items: center;
@@ -46,6 +51,50 @@
     .px-card-button-block {
       width: 24px;
       height: 24px;
+    }
+  }
+
+  &--logo {
+    display: flex;
+    align-items: center;
+    padding: 32px 12px;
+    aspect-ratio: 16/9;
+    &::after {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      height: 30%;
+      width: 1px;
+      background-color: #d9d9d9;
+    }
+
+    @media (min-width: 1024px) {
+      &:nth-child(3n) {
+        &::after {
+          display: none;
+        }
+      }
+    }
+
+    @include screen-1024 {
+      &:nth-child(2n) {
+        &::after {
+          display: none;
+        }
+      }
+    }
+
+    @include screen-552 {
+      &::after {
+        display: none;
+      }
+    }
+
+    .px-logo {
+      display: flex;
+      justify-content: center;
     }
   }
 }
