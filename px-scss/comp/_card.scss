@@ -28,6 +28,7 @@
     max-width: 376px;
     flex: 1 1 100%;
     justify-content: space-between;
+    transition: all 200ms ease;
 
     .px-card-content-block {
       display: inline-flex;
@@ -51,6 +52,11 @@
     .px-card-button-block {
       width: 24px;
       height: 24px;
+    }
+
+    &:hover {
+      border-color: var(--heading-color);
+      box-shadow: rgba(149, 157, 165, 0.1) 0px 8px 24px;
     }
   }
 

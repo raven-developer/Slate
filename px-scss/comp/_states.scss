@@ -16,6 +16,11 @@
   justify-content: center;
 }
 
+.px-top-wrapper:has(.is_center):not(.px-section--home-01 .px-top-wrapper) {
+  max-width: 800px;
+  margin-inline: auto;
+}
+
 .vertical_center {
   align-items: center;
 }
