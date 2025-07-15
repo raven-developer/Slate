@@ -30,7 +30,7 @@
 
   &--2col {
     grid-template-columns: repeat(2, 1fr);
-    @include screen-552 {
+    @include screen-768 {
       grid-template-columns: repeat(1, 1fr);
     }
   }
