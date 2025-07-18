@@ -11,6 +11,7 @@
     @include btn-variant(var(--accent-color), transparent, var(--accent-color), var(--accent-color));
 
     &:hover {
+      border-color: var(--accent-color);
       color: white;
     }
   }
@@ -31,5 +32,11 @@
     &:active {
       transform: unset;
     }
+  }
+}
+
+.px-wrapper-block--row {
+  .px-button {
+    margin-bottom: 34px;
   }
 }

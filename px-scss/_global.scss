@@ -3,15 +3,6 @@
 */
 @use 'style/index.scss' as *;
 
-.px-section {
-  padding-block: 120px;
-  width: 100%;
-
-  &--short {
-    padding-block: 60px;
-  }
-}
-
 .px-container {
   max-width: 1192px;
   width: 100%;
@@ -24,29 +15,6 @@
   &--nav {
     max-width: 1344px;
   }
-}
-
-.px-content-block {
-  display: flex;
-
-  &--col {
-    flex-direction: column;
-  }
-
-  &--row {
-    flex-direction: row;
-    @include screen-1024 {
-      flex-direction: column;
-    }
-  }
-  /*
-  .px-top-wrapper,
-  .px-bottom-wrapper,
-  .px-left-wrapper,
-  .px-right-wrapper {
-    flex: 1;
-  }
-    */
 }
 
 .px-heading-block {

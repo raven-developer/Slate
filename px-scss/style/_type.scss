@@ -108,6 +108,7 @@ main a:not(.is_card):not(.px-button) {
   }
 }
 
+.px-card-title,
 .px-blog-title {
   @extend h5;
   letter-spacing: -0.5px;

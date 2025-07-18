@@ -1,3 +1,5 @@
+@use '../style/index.scss' as *;
+
 body {
   background-image: url('../px-upload/image/bU4StW2wMzOvXUD5mWxTW9khas.jpg');
   background-attachment: fixed;
@@ -10,6 +12,21 @@ section[data-variant='white'] {
   background-color: var(--white);
 }
 
+.px-content-block {
+  display: flex;
+
+  &--col {
+    flex-direction: column;
+  }
+
+  &--row {
+    flex-direction: row;
+    @include screen-1024 {
+      flex-direction: column;
+    }
+  }
+}
+
 .px-section--hero {
   /* max-height: 100vh; */
   max-height: 100%;
@@ -19,5 +36,33 @@ section[data-variant='white'] {
   width: 100%;
   .px-text:not(.px-eyebrow) {
     font-size: 1.125rem;
+  }
+}
+
+.px-section {
+  padding-block: 120px;
+  width: 100%;
+
+  &--short {
+    padding-block: 60px;
+  }
+}
+
+.px-top-wrapper,
+.px-bottom-wrapper,
+.px-left-wrapper,
+.px-right-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.px-wrapper-block {
+  &--row {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    @include screen-1024 {
+      flex-direction: column;
+    }
   }
 }
