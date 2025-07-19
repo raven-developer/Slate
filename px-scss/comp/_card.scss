@@ -34,6 +34,18 @@
     }
   }
 
+  &--centered {
+    align-items: center;
+    .px-heading,
+    .px-text {
+      text-align: center;
+    }
+
+    .px-heading {
+      margin: 0;
+    }
+  }
+
   &--compact {
     display: inline-flex;
     align-items: center;
@@ -120,13 +132,15 @@
   }
 
   &--blog {
+    background-color: var(--white);
     border-radius: 12px;
     border: 1px solid var(--light-gray);
     transition: all 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 
-    .px-blog-excerpt {
+    .px-blog-excerpt,
+    .px-blog-title {
       display: -webkit-box;
-      -webkit-line-clamp: 3;
+      -webkit-line-clamp: 3; // Default for excerpt
       -webkit-box-orient: vertical;
       overflow: hidden;
       text-overflow: ellipsis;
@@ -179,6 +193,7 @@
     &--col {
       padding: 6px 6px 40px;
       flex-direction: column;
+
       .px-blog-content-block {
         padding: 32px 26px 0;
       }
@@ -201,16 +216,8 @@
         padding: 20px 0 15px 20px;
       }
 
-      .px-blog-title {
-        display: -webkit-box;
-        -webkit-line-clamp: 2;
-        -webkit-box-orient: vertical;
-        overflow: hidden;
-        text-overflow: ellipsis;
-      }
-
       &__image-block {
-        max-width: 248px;
+        max-width: 235px;
 
         img {
           height: 100%;
@@ -221,7 +228,9 @@
     &:hover:not(&--tall) {
       border-color: var(--heading-color);
       box-shadow: rgba(149, 157, 165, 0.1) 0px 8px 24px;
+    }
 
+    &:hover {
       img:not(.px-blog-author-image) {
         transform: scale(1.1);
       }
@@ -234,11 +243,48 @@
       &__image-block {
         aspect-ratio: 0.9;
         width: 100%;
-
+        border-radius: 8px;
+        overflow: hidden;
         img {
+          object-fit: cover;
           height: 100%;
         }
       }
+
+      .px-blog-content-block {
+        margin-top: 25px;
+      }
+    }
+  }
+  &--icon-box {
+    padding: 40px;
+    background-color: var(--white);
+    border-radius: 20px;
+
+    .px-card__icon {
+      margin-bottom: 32px;
+      width: 56px;
+      height: 56px;
+    }
+  }
+
+  &--testimonial {
+    padding: 32px;
+    background-color: var(--white);
+    border: 1px solid var(--light-gray);
+    border-radius: 12px;
+
+    &__author-block,
+    &__content-block {
+      border-bottom: 1px solid var(--light-gray);
+    }
+
+    &__author-block {
+      padding-bottom: 1rem;
+    }
+
+    &__rating-block {
+      padding-top: 1rem;
     }
   }
 }

@@ -98,6 +98,12 @@
   }
 }
 
+@mixin screen-767 {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
+
 @mixin screen-552 {
   @media (max-width: 552px) {
     @content;

@@ -25,6 +25,12 @@ section[data-variant='white'] {
       flex-direction: column;
     }
   }
+
+  &--cta {
+    padding: 80px 120px;
+    @extend body;
+    border-radius: 32px;
+  }
 }
 
 .px-section--hero {

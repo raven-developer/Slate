@@ -108,7 +108,7 @@ main a:not(.is_card):not(.px-button) {
   }
 }
 
-.px-card-title,
+.px-card__title,
 .px-blog-title {
   @extend h5;
   letter-spacing: -0.5px;
@@ -134,4 +134,10 @@ main a:not(.is_card):not(.px-button) {
   .px-blog-author-name {
     @extend .px-blog-info;
   }
+}
+
+.px-testimonial-author-name {
+  @include paragraph-font(1.125rem, var(--heading-color));
+  font-weight: 500;
+  letter-spacing: -0.27px;
 }
