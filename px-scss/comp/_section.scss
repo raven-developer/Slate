@@ -8,8 +8,12 @@ body {
   background-repeat: no-repeat;
 }
 
-section[data-variant='white'] {
+[data-variant='white'] {
   background-color: var(--white);
+}
+
+[data-variant='dark'] {
+  background-color: var(--black-color);
 }
 
 .px-content-block {

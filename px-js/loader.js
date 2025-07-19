@@ -31,4 +31,32 @@ document.addEventListener('DOMContentLoaded', async function () {
     parent.style.height = `${height}px`;
     parent.style.width = `${width}px`;
   }
+
+  // FOR ACCORDION
+  const accordionTriggers = document.querySelectorAll('.px-accordion-trigger');
+
+  accordionTriggers.forEach((trigger) => {
+    trigger.addEventListener('click', () => {
+      const item = trigger.closest('.px-accordion');
+      const content = item.querySelector('.px-accordion__content-block');
+
+      document.querySelectorAll('.px-accordion').forEach((otherItem) => {
+        if (otherItem !== item) {
+          otherItem.classList.remove('is_expand');
+          const otherContent = otherItem.querySelector('.px-accordion__content-block');
+          otherContent.style.maxHeight = null;
+          otherContent.style.paddingTop = '0';
+          otherContent.style.paddingBottom = '0';
+        }
+      });
+
+      item.classList.toggle('is_expand');
+
+      if (item.classList.contains('is_expand')) {
+        content.style.paddingBottom = '24px';
+      } else {
+        content.style.paddingBottom = '0';
+      }
+    });
+  });
 });

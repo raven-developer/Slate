@@ -274,17 +274,31 @@
     border: 1px solid var(--light-gray);
     border-radius: 12px;
 
-    &__author-block,
     &__content-block {
-      border-bottom: 1px solid var(--light-gray);
+      border: 1px solid, var(--light-gray);
+      border-left: unset;
+      border-right: unset;
+      padding-block: 2rem;
+      margin-block: 1rem;
     }
 
     &__author-block {
       padding-bottom: 1rem;
+      align-items: center;
     }
 
     &__rating-block {
       padding-top: 1rem;
+    }
+
+    &__author-image-block {
+      width: 48px;
+      aspect-ratio: 1;
+      height: 100%;
+      img {
+        object-fit: cover;
+        height: 100%;
+      }
     }
   }
 }

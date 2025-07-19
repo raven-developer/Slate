@@ -136,8 +136,19 @@ main a:not(.is_card):not(.px-button) {
   }
 }
 
-.px-testimonial-author-name {
-  @include paragraph-font(1.125rem, var(--heading-color));
-  font-weight: 500;
-  letter-spacing: -0.27px;
+.px-card--testimonial {
+  &__date {
+    font-size: 0.8rem;
+  }
+  &__author-name {
+    @include paragraph-font(1rem, var(--heading-color));
+    font-weight: 500;
+    letter-spacing: -0.27px;
+    margin-block: 0;
+  }
+}
+
+.px-accordion__header {
+  @extend h5;
+  letter-spacing: -0.5px;
 }
