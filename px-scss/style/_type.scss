@@ -152,3 +152,9 @@ main a:not(.is_card):not(.px-button) {
   @extend h5;
   letter-spacing: -0.5px;
 }
+
+footer .px-heading {
+  @extend h6;
+  letter-spacing: -0.5px;
+  color: var(--highlight-color);
+}
